@@ -30,7 +30,7 @@ function testGameCompleted(board){
     
     for (let i in game.players){
         //for both X and O
-        let player = players[i]
+        let player = game.players[i]
 
         for (let j in wins){
             winBoard = wins[j]
