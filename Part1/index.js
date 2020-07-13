@@ -31,7 +31,7 @@ function testGameCompleted(board){
     for (let i in game.players){
         //for both X and O
         let player = game.players[i]
-
+        
         for (let j in wins){
             winBoard = wins[j]
             
@@ -88,7 +88,7 @@ function play(boxId){
 function winMsg(endState){
     let msg = {
         X:   [ " ", "X", " ", "W", "O","N", "!", "!","!"],
-        O:   [ " ", "X", " ", "W", "O","N", "!", "!","!"],
+        O:   [ " ", "O", " ", "W", "O","N", "!", "!","!"],
         tie: [ " ", " ", " ", "T", "I","E", "!", "!","!"],
     }
     let boxes = document.getElementsByTagName("td")
